@@ -19,6 +19,11 @@ public class Nodo {
         this.derecha = null;
     }
 
+    public Nodo(Contacto contacto) {
+        this.contacto = contacto;
+    }
+    
+
     public Contacto getContacto() {
         return contacto;
     }
