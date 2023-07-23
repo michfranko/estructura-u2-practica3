@@ -8,47 +8,43 @@ package ec.edu.ups.edu.practica_arbolesbinarios.modelo;
  *
  * @author jf001
  */
-public class Nodo {
+public class Nodo{
     private Contacto contacto;
-    private Nodo Izquierda;
-    private Nodo derecha;
-
-    public Nodo(Contacto contacto, Nodo Izquierda, Nodo derecha) {
-        this.contacto = contacto;
-        this.Izquierda = null;
-        this.derecha = null;
-    }
+    private Nodo left;
+    private Nodo right;
 
     public Nodo(Contacto contacto) {
         this.contacto = contacto;
+        left = null;
+        right =  null;
     }
     
+    
+    
+
+    public Nodo getLeft() {
+        return left;
+    }
+
+    public Nodo getRight() {
+        return right;
+    }
 
     public Contacto getContacto() {
         return contacto;
     }
 
-    public void setContacto(Contacto contacto) {
-        this.contacto = contacto;
-    }
-
-    public Nodo getIzquierda() {
-        return Izquierda;
-    }
-
-    public void setIzquierda(Nodo Izquierda) {
-        this.Izquierda = Izquierda;
-    }
-
-    public Nodo getDerecha() {
-        return derecha;
-    }
-
-    public void setDerecha(Nodo derecha) {
-        this.derecha = derecha;
+    public void setLeft(Nodo left) {
+        this.left = left;
     }
     
-    
-    
+
+    public void setRight(Nodo right) {
+        this.right = right;
+    }
+
+    public void setValue(Contacto value) {
+        this.contacto = value;
+    }
     
 }
